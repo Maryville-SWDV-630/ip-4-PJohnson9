@@ -1,0 +1,15 @@
+Use Case Name:      Ring Up Item
+Id:                 7
+Scenario:           Item to be purchased is entered for the sale
+Triggering Event:   Customer wishes to purchase item
+Brief Description:  Employee rings up an item
+Actors:	            Clerk or Manager, Customer
+Assumptions:	    Item has already been entered into the system
+Frequency of Use:   Many times each hour
+Related Use Cases:  Add Item to Sysem, Update Item Details, Remove Item from Sale
+Stakeholders:	    Manager, Clerk, Customer
+Preconditions:	    Item has been entered into system
+Postconditions:	    Item has been added to the sale transaction
+Main Course:        1. Item is scanned by clerk or manager
+                    2. Item is added to sale
+Alternate Course:   1. Employee can specify quantity of items after scanning
