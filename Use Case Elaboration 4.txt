@@ -1,0 +1,21 @@
+Use Case Name:      Remove Item from Sale
+Id:                 8
+Scenario:           Item that has been rung up needs to be removed from the transaction
+Triggering Event:   Customer changes mind, Item is unavailable, Mistaken item scan
+Brief Description:  A new manager is added to the system
+Actors:	            Clerk or Manager, Customer
+Assumptions:	    Item has been rung up, item should not be processed with sale
+Frequency of Use:   Daily or Hourly
+Related Use Cases:  Ring Up Item
+Stakeholders:	    Manager, Clerk, Customer
+Preconditions:	    Item has been rung up
+Postconditions:	    Item is not included on sale
+Main Course:        1. Employee selects item from current sale
+                    2. Employee either:
+                       a. Specifices new (reduced) quanity
+                       b. Selects remove to eliminate the item
+                    3. System shows updated quantity (possibly zero)
+Alternate Course:   1. Employee sets system to item removal mode
+                    2. Employee scans item to indicate which item to remove
+                    3. Employee specificies quantity to remove (or all)
+                    4. System displays updated quantity (zero)
