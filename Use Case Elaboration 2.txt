@@ -4,11 +4,12 @@ Scenario:           New item for sale gets added to system
 Triggering Event:   New item becomes available 
 Brief Description:  A new item is added to the sale system.
 Actors:	            Manager
-Assumptions:	    Item is not already in the system.  Item details (description, codes, price) are known.
+Assumptions:        Item is not already in the system.  
+                    Item details (description, codes, price) are known.
 Frequency of Use:   Weekly
 Related Use Cases:  Deactivate Item
-Stakeholders:	    Manager, Clerk
-Preconditions:	    Item is not in system.  Item details are known.
+Stakeholders:       Manager, Clerk
+Preconditions:      Item is not in system.  Item details are known.
 Postconditions:	    Item is available to be sold through the system.
 Main Course:        1. Manager selects Add Item from Item Management menu
                     2. Manager enters item details
