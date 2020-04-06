@@ -1,0 +1,22 @@
+Use Case Name:      Add Manager
+Id:                 2
+Scenario:           New user is added to system as a manager
+Triggering Event:   New manager is hired
+Brief Description:  A new manager is added to the system
+Actors:	            Administrator
+Assumptions:	    Manager is not already in the system (as Clerk)
+Frequency of Use:   Monthly
+Related Use Cases:  Deactivate User, Promote User
+Stakeholders:	    Administrator, Manager
+Preconditions:	    Manager is not in system.  Manager details are known.
+Postconditions:	    Manager has been added to the system with a PIN assigned.
+Main Course:        1. Administrator selects Add Manager from Employee Management menu
+                    2. Administrator enters manager details
+                    3. System prompts for confirmation of details
+                    4. System offers test of assigned PIN
+                    5. System adds manager
+Alternate Course:   1. Employee number already in system
+                       a. Offer to change employee number for new employee
+                       b. Offer to promote clerk to manager
+                    1. PIN doesn't match
+                       a. Re-enter PIN

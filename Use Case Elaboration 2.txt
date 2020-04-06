@@ -1,0 +1,22 @@
+Use Case Name:      Add Item to System
+Id:                 4
+Scenario:           New item for sale gets added to system
+Triggering Event:   New item becomes available 
+Brief Description:  A new item is added to the sale system.
+Actors:	            Manager
+Assumptions:	    Item is not already in the system.  Item details (description, codes, price) are known.
+Frequency of Use:   Weekly
+Related Use Cases:  Deactivate Item
+Stakeholders:	    Manager, Clerk
+Preconditions:	    Item is not in system.  Item details are known.
+Postconditions:	    Item is available to be sold through the system.
+Main Course:        1. Manager selects Add Item from Item Management menu
+                    2. Manager enters item details
+                    3. System prompts for confirmation of details
+                    4. System offers test scan of item (to verify barcode)
+                    5. System adds item
+Alternate Course:   1. Item code already in system
+                       a. Offer to change details of existing item
+                    2. Barcode scan doesn't match code entered
+                       a. Offer to scan item again to try for match (Wrong item was scanned)
+                       b. Offer to update item code to match what was scanned
